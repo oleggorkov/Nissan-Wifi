@@ -1,0 +1,492 @@
+.landing-main {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-header {
+    width: 100%;
+    height: 88.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background: url("../img/main-image-mob.png") no-repeat top center;
+    background-size: cover;
+
+    @include above($mobile) {
+      height: 131.7rem;
+    }
+
+    @include above($tablet) {
+      background: url("../img/main-image.png") no-repeat top center;
+      background-size: cover;
+      height: 102rem;
+    }
+
+    @include above($big-desktop) {
+      background: url("../img/main-image.png") no-repeat top center;
+      background-size: cover;
+      height: 125rem;
+    }
+
+    &__arrow {
+      position: absolute;
+      bottom: 3rem;
+
+      @include above($mobile) {
+        bottom: 20rem;
+      }
+
+      @include above($tablet) {
+        display: none;
+      }
+    }
+
+    &__logo {
+      width: 45%;
+      height: auto;
+      position: absolute;
+      top: 7.5rem;
+
+      @include above($tablet) {
+        width: 20rem;
+        height: 15rem;
+        top: 3.3rem;
+        left: 3.1rem;
+      }
+
+      @include above($desktop) {
+        width: 24rem;
+        height: 19rem;
+        top: 6.3rem;
+        left: 5.1rem;
+      }
+
+      @include above($mid-desktop) {
+        width: 28.5rem;
+        height: 23.9rem;
+        top: 8.3rem;
+        left: 9.1rem;
+      }
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Nissan Brand", sans-serif;
+      font-style: normal;
+      color: #FFFFFF;
+      margin-top: 58rem;
+
+      @include above(550px) {
+      margin-top: 67rem;
+      }
+
+      @include above($mobile) {
+        margin-top: 70rem;
+      }
+
+      @include above($tablet) {
+        margin-top: 77rem;
+      }
+
+      span:first-of-type {
+        font-weight: 300;
+        font-size: 1.9rem;
+        line-height: 2.1rem;
+        margin-bottom: 1.1rem;
+        text-transform: uppercase;
+
+        @include above($tablet) {
+          font-size: 4rem;
+          margin-bottom: 2.1rem;
+        }
+      }
+
+      span:nth-of-type(2) {
+        font-size: 3.4rem;
+        line-height: 4.1rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        margin-bottom: 1.1rem;
+        text-align: center;
+
+        @include above($tablet) {
+          font-size: 7rem;
+          line-height: 6rem;
+          margin-bottom: 2.1rem;
+        }
+      }
+
+      span:last-of-type {
+        font-size: 1.1rem;
+        line-height: 2.3rem;
+        font-weight: 400;
+
+        @include above($tablet) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  &__info {
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4.2rem 3rem 5.6rem 3rem;
+    font-family: 'Nissan Brand', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.07em;
+    color: #2F2826;
+    position: relative;
+
+    @include above($tablet) {
+      font-size: 2.5rem;
+      line-height: 3.9rem;
+      padding: 7rem 3rem 9.8rem 3rem;
+    }
+
+    @include above($desktop) {
+      width: 111.7rem;
+    }
+
+    span {
+      position: absolute;
+      width: 6rem;
+      border: 0.7px solid #C3002F;
+      bottom: 3.2rem;
+
+      @include above($tablet) {
+        width: 20rem;
+        bottom: 5.1rem;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    height: auto;
+    padding: 4.7rem 3rem 4.3rem 3rem;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+
+    @include above($tablet) {
+      padding: 7.9rem 3rem 7.3rem 3rem;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 24rem;
+      height: 6rem;
+      background: #C3002F;
+      color: #FFFFFF;
+      font-family: 'Nissan Brand', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.33em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+
+      &:hover, &:focus {
+        color: #C3002F;
+        background: #FFFFFF;
+        border: 1px solid #C3002F;
+      }
+
+      @include above($tablet) {
+        width: 71.7rem;
+        height: 17.9rem;
+        font-size: 3.2rem;
+        line-height: 4.5rem;
+      }
+    }
+  }
+
+  &__empty {
+    width: 100%;
+    height: 6rem;
+    background: #2F2826;
+
+    @include above($tablet) {
+      height: 10.8rem;
+    }
+  }
+
+ &__block {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: #F2F2F2;
+
+   &-title {
+     font-family: 'Nissan Brand', sans-serif;
+     font-style: normal;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     font-weight: 300;
+     font-size: 1.4rem;
+     line-height: 2.5rem;
+     letter-spacing: 0.14em;
+     text-transform: uppercase;
+     text-align: center;
+     color: #000000;
+     margin-top: 4.5rem;
+     margin-bottom: 2.3rem;
+
+     @include above($tablet) {
+       margin-top: 7.3rem;
+       margin-bottom: 4.9rem;
+       font-size: 3.2rem;
+       line-height: 4.4rem;
+     }
+   }
+ }
+
+  &-form {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0 3.7rem 0 2.9rem;
+
+    @include above($tablet) {
+      padding: 0 10.3rem 0 8.5rem;
+    }
+
+    &__info {
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+      font-family: 'Nissan Brand', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.6rem;
+      line-height: 0.8rem;
+      text-align: justify;
+      letter-spacing: 0.07em;
+      color: #2F2826;
+
+      @include above($tablet) {
+        margin-top: 3.5rem;
+        font-size: 1rem;
+        line-height: 1.4rem;
+      }
+    }
+
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+      width: 24rem;
+      height: 6rem;
+      background: #2F2826;
+      color: #FFFFFF;
+      font-family: 'Nissan Brand', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      letter-spacing: 0.33em;
+      text-transform: uppercase;
+      outline: none;
+      transition: background .25s ease;
+      margin-bottom: 4.1rem;
+
+      &:hover, &:focus {
+        background: #C3002F;
+      }
+
+      @include above($tablet) {
+        width: 71.7rem;
+        height: 17.9rem;
+        font-size: 3.2rem;
+        line-height: 4.5rem;
+        margin-bottom: 9.6rem;
+      }
+    }
+
+    &__check {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 1.6rem;
+
+      @include above($tablet) {
+        margin-top: 5.1rem;
+        height: 4rem;
+      }
+
+      input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+
+      label {
+        font-family: 'Nissan Brand', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.1rem;
+        line-height: 2.3rem;
+        letter-spacing: 0.01em;
+        color: #2F2826;
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        cursor: pointer;
+
+        @include above($tablet) {
+          font-size: 2.5rem;
+          line-height: 2.3rem;
+          align-items: flex-start;
+        }
+
+        @include above($tablet-landscape) {
+          font-size: 2.5rem;
+          line-height: 2.3rem;
+          align-items: center;
+        }
+
+        span {
+          color: #C3002F;
+        }
+
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 1.6rem;
+          height: 1.6rem;
+          flex-shrink: 0;
+          flex-grow: 0;
+          border: 1px solid #888888;
+          margin-right: 0.6rem;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 50% 50%;
+
+          @include above($tablet) {
+            width: 4rem;
+            height: 4rem;
+            margin-right: 3.2rem;
+          }
+
+          @include above($tablet-landscape) {
+            margin-right: 2rem;
+          }
+
+          @include above($desktop) {
+            margin-right: 3.2rem;
+          }
+        }
+      }
+
+      input:checked + label:before {
+        border-color: #C3002F;
+        background-color: #C3002F;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+      }
+
+      input:not(:disabled):not(:checked)+label:hover::before {
+        border-color: #C3002F;
+      }
+    }
+
+    &__label {
+      font-family: 'Nissan Brand', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.1rem;
+      line-height: 2.3rem;
+      letter-spacing: 0.07em;
+      color: #2F2826;
+      margin-bottom: 0.5rem;
+
+      @include above($tablet) {
+        font-size: 2.5rem;
+        line-height: 2.3rem;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      height: 2.2rem;
+
+      border-bottom: 0.7px solid #3E3A39;
+
+      margin-bottom: 3.3rem;
+
+      @include above($tablet) {
+        height: 3.8rem;
+        margin-bottom: 2rem;
+      }
+
+      &:last-of-type {
+        margin-bottom: 3.3rem;
+
+        @include above($tablet) {
+          margin-bottom: 7.1rem;
+        }
+      }
+
+      input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border: none;
+        background: transparent;
+        font-family: 'Nissan Brand', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        padding-right: 1rem;
+
+        @include above($tablet) {
+          font-size: 2.2rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}
