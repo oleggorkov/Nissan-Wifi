@@ -442,6 +442,10 @@
       color: #2F2826;
       margin-bottom: 0.5rem;
 
+      span {
+        color: #C3002F;
+      }
+
       @include above($tablet) {
         font-size: 2.5rem;
         line-height: 2.3rem;

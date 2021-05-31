@@ -1,0 +1,141 @@
+.landing-question-extra {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #9C9C9C;
+
+  position: relative;
+
+  .landing-main-header__logo {
+    display: none;
+
+    @include above($big-desktop) {
+      width: 23rem;
+      height: auto;
+      top: 50.5rem;
+      left: 6rem;
+      display: flex;
+    }
+  }
+
+  & .landing-main-form {
+    width: 88%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.4);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+
+    @include above($tablet) {
+      padding: 5rem;
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+    }
+
+    @include above($big-desktop) {
+      width: 85rem;
+    }
+  }
+
+  .landing-main-form__label {
+    color: #FFFFFF;
+  }
+
+  .landing-main-form__input {
+    border: none;
+    height: 3rem;
+    margin-bottom: 2rem;
+
+    @include above($tablet) {
+      height: 5rem;
+      margin-bottom: 4rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .landing-main-form__input input {
+    text-align: center;
+    font-family: Nissan Brand,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 0 2rem 0 2rem;
+
+    @include above($tablet) {
+      font-size: 25px;
+    }
+  }
+
+  .landing-main-form__check label {
+    color: #FFFFFF;
+  }
+
+  .landing-main-form__check label:before {
+    border-radius: 50%;
+    border: none;
+    background: #FFFFFF;
+  }
+
+  .landing-main-form__check input:checked + label:before {
+    background-color: #C3002F;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include above($tablet) {
+      background-size: 25px;
+    }
+  }
+
+  .landing-main-form__info {
+    color: #FFFFFF;
+  }
+
+  .landing-main-form__button {
+    width: 25rem;
+    height: 5rem;
+    background: #9C9C9C;
+    border-radius: 12px;
+    border: none;
+    text-transform: none;
+
+    &:hover, &:focus {
+      background: #C3002F;
+    }
+
+    @include above($tablet) {
+      width: 40rem;
+      height: 10rem;
+    }
+  }
+
+  .landing-main-form__male {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+
+    label {
+      align-items: center;
+    }
+
+    @include above($tablet) {
+      margin-bottom: 4rem;
+    }
+
+    label:first-of-type {
+      margin-right: 5rem;
+
+      @include above($desktop) {
+        margin-right: 10rem;
+      }
+    }
+  }
+}

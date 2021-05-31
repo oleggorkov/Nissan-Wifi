@@ -1,0 +1,34 @@
+mixin landing-question
+    section.section
+        .section__wrapper
+            .landing-question
+                form.landing-main-form(method='post')
+                    label(for='name').landing-main-form__label Имя&nbsp
+                        span *
+                    .landing-main-form__input
+                        input(id='name' type='text' placeholder="Введите текст")
+                    label(for='surname').landing-main-form__label Фамилия&nbsp
+                        span *
+                    .landing-main-form__input
+                        input(id='surname' type='text' placeholder="Введите текст")
+                    label(for='email').landing-main-form__label Электронная почта&nbsp
+                        span *
+                    .landing-main-form__input
+                        input(id='email' type='email' placeholder="Введите текст")
+                    label(for='male').landing-main-form__label Пол&nbsp
+                        span *
+                    .landing-main-form__check.landing-main-form__male
+                        input(type="radio" id="male" name="radio")
+                        label(for="male") Мужской
+                        input(type="radio" id="female" name="radio")
+                        label(for="female") Женский
+                    label(for='age').landing-main-form__label Возраст&nbsp
+                        span *
+                    .landing-main-form__input
+                        input(id='age' type='number' placeholder="Введите текст")
+                    .landing-main-form__check
+                        input(type="checkbox" id="check" name="check")
+                        label(for="check") Отметьте здесь в подтверждение Вашего согласия&nbsp
+                            span *
+                    .landing-main-form__info Настоящим Вы выражаете свое безусловное согласие ООО «Ниссан Мэнуфэкчуринг РУС» (далее - «Общество») на обработку вышеуказанных персональных данных  с использованием и без использования средств автоматизации, включая их передачу, в том числе трансграничную, компаниям группы Nissan, авторизованным дилерам (Nissan, Infiniti, Datsun), а также организациям, с которыми Общество осуществляет взаимодействие на основании соответствующих договоров (соглашений), для следующих целей: доставки заказанного товара, послепродажного обслуживания товара, уведомления о сервисных и отзывных кампаниях; осуществления контроля продаж и обслуживания покупателей; хранения в информационных системах для оптимизации процессов взаимодействия с покупателями; технической поддержки информационных систем; статистических и аналитических целей; проведения маркетинговых исследований. Настоящее согласие действует в течение 25 лет со дня его получения. Вы также уведомляетесь о том, что в соответствии со статьей 9 Федерального закона от 27.07.2006 г. № 152-ФЗ «О персональных данных» настоящее согласие может быть отозвано путем направления в письменной форме уведомления Обществу заказным почтовым отправлением с описью вложения по адресу: 194362, г. Санкт-Петербург, пос.Парголово, Комендантский проспект, д.140, либо вручения лично под подпись уполномоченным представителям Общества.Настоящим Вы также подтверждаете, что согласны получать информацию о товарах, услугах и мероприятиях с помощью средств связи (интернет, смс, телефонных звонков, почты).
+                    button.landing-main-form__button(type='submit') Отправить
