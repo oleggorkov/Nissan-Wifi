@@ -15,7 +15,7 @@
   & .landing-main-header {
     position: relative;
 
-    background: url("../img/main-image-mob.png") no-repeat top center;
+    background: url("../img/main-image-mob.jpg") no-repeat top center;
     background-size: cover;
 
     @include above($mobile) {
@@ -23,7 +23,7 @@
     }
 
     @include above($tablet) {
-      background: url("../img/main-image-extra.png") no-repeat top center;
+      background: url("../img/main-image-extra.jpg") no-repeat top center;
       background-size: cover;
       height: 131rem;
     }
