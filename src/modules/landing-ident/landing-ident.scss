@@ -60,95 +60,128 @@
       top: 25.2rem;
     }
   }
+}
 
-  &-block {
-    width: 100%;
-    height: auto;
-    background: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    bottom: 0;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.landing-ident-block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  & .landing-internet__link {
+    font-family: Nissan Brand, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .25s;
+    text-align: center;
+
+    &:hover, &:focus {
+      color: rgba(26, 27, 28, 0.92);
+    }
 
     @include above($tablet) {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+      font-size: 25px;
     }
+  }
 
-    &__title {
-      font-family: Nissan Brand, sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 15px;
-      text-align: center;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      color: #FFFFFF;
-      margin-bottom: 0.5rem;
+  span {
+    font-family: Nissan Brand, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 1rem;
+  }
 
-      @include above($tablet) {
-        font-size: 35px;
-      }
+  @include above($tablet) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  &__title {
+    font-family: Nissan Brand, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+
+    @include above($tablet) {
+      font-size: 35px;
     }
+  }
 
-    &__subtitle {
-      font-family: Nissan Brand, sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 13px;
-      line-height: 21px;
-      text-align: center;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      margin-bottom: 2rem;
+  &__subtitle {
+    font-family: Nissan Brand, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
 
-      @include above($tablet) {
-        font-size: 18px;
-        margin-bottom: 6.3rem;
-      }
+    @include above($tablet) {
+      font-size: 18px;
+      margin-bottom: 6.3rem;
     }
+  }
 
-    &__buttons {
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      width: 20rem;
       display: flex;
       align-items: center;
-      justify-content: center;
+      flex-direction: column;
 
-      a {
-        width: 20rem;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+      @include above($tablet) {
+        width: 30rem;
+      }
+
+      span {
+        margin-top: 1rem;
+        font-family: Nissan Brand,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #FFFFFF;
 
         @include above($tablet) {
-          width: 30rem;
+          font-size: 50px;
         }
+      }
 
-        span {
-          margin-top: 1rem;
-          font-family: Nissan Brand,sans-serif;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 15px;
-          text-align: center;
-          letter-spacing: 0.01em;
-          text-transform: uppercase;
-          color: #FFFFFF;
+      img {
+        width: 4rem;
+        height: 4rem;
 
-          @include above($tablet) {
-            font-size: 50px;
-          }
-        }
-
-        img {
-          width: 4rem;
-          height: 4rem;
-
-          @include above($tablet) {
-            width: 12rem;
-            height: 12rem;
-          }
+        @include above($tablet) {
+          width: 12rem;
+          height: 12rem;
         }
       }
     }

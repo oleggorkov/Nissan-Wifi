@@ -1,6 +1,6 @@
 .landing-question {
   width: 100%;
-  height: auto;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -10,12 +10,29 @@
   background: url("../img/landing-question.png") no-repeat top center;
   background-size: cover;
 
+  h2 {
+    text-align: center;
+    align-self: center;
+    font-family: Nissan Brand,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+
+    @include above($tablet-landscape) {
+      font-size: 30px;
+      margin-bottom: 5rem;
+    }
+  }
+
   & .landing-main-form {
     width: 88%;
+    max-width: 1377px;
     height: auto;
     background: rgba(255, 255, 255, 0.4);
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 1rem;
 
     @include above($tablet) {

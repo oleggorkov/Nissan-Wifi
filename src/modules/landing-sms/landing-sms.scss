@@ -1,7 +1,170 @@
 .landing-sms {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include above($desktop) {
+    height: auto;
+  }
+
+
   .landing-internet-form__input {
     input {
       text-align: center;
+    }
+  }
+
+  .landing-main__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: darkgray;
+
+    @include above($desktop) {
+      height: auto;
+    }
+
+    img:first-of-type {
+      height: 475px;
+
+      @include above($desktop) {
+        height: auto;
+      }
+    }
+  }
+
+  & .landing-ident-block {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: darkgray;
+
+    @include above($desktop) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    @include above($extra-desktop) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .landing-main-header__logo {
+    width: 10rem;
+    height: auto;
+    top: 15rem;
+
+    @include above($mobile) {
+      top: 13rem;
+    }
+
+    @include above($desktop) {
+      width: 15rem;
+      top: 30rem;
+      left: 5rem;
+    }
+
+    @include above($big-desktop) {
+      width: 20rem;
+    }
+  }
+
+  .landing-ident-block {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    @include above($tablet) {
+      bottom: 20rem;
+    }
+
+    @include above($desktop) {
+      bottom: 0;
+    }
+
+    span {
+      font-family: Nissan Brand, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-top: 1rem;
+    }
+
+    &__title {
+      font-size: 15px;
+      @include above($desktop) {
+        font-size: 20px;
+      }
+    }
+
+    &__subtitle {
+      font-size: 12px;
+      margin-bottom: 0.5rem;
+      @include above($desktop) {
+        font-size: 15px;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  & .landing-internet__link {
+    font-family: Nissan Brand, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color .25s;
+    text-align: center;
+
+    &:hover, &:focus {
+      color: rgba(26, 27, 28, 0.92);
+    }
+
+    @include above($desktop) {
+      font-size: 25px;
+    }
+  }
+
+  .landing-main__info {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: 'Nissan Brand', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.07em;
+    color: #2F2826;
+    position: relative;
+
+    @include above($desktop) {
+      font-size: 2.5rem;
+      line-height: 3.9rem;
+      padding: 4.2rem 3rem 5.6rem 3rem;
+    }
+
+    span {
+      position: absolute;
+      width: 6rem;
+      border: 0.7px solid #C3002F;
+      bottom: 1.2rem;
+
+      @include above($desktop) {
+        width: 20rem;
+        bottom: 3.1rem;
+      }
     }
   }
 }

@@ -27,8 +27,6 @@ main{
     width: 100%;
     height: auto;
 
-    max-width: 144rem;
-
     margin-left: auto;
     margin-right: auto;
 
@@ -36,19 +34,5 @@ main{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
-    @include above($tablet-landscape) {
-      padding: 0 2rem;
-      max-width: 92rem;
-    }
-
-    @include above($desktop) {
-      max-width: 160rem;
-      padding: 0 3.5rem;
-    }
-
-    @include above($big-desktop) {
-      max-width: 192rem;
-    }
   }
 }
